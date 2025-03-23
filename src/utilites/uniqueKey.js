@@ -1,0 +1,1 @@
+export const createKey = () => (1000000 - 1 + Math.floor(Math.random() * 9000000))
