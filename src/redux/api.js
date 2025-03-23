@@ -83,4 +83,5 @@ export const {
   useAddTodoMutation, 
   useRemoveTodoMutation, 
   useUpdateTodoMutation,
+  useGetCompletedTasksQuery
 } = todosApi;
