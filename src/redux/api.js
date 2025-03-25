@@ -24,7 +24,7 @@ export const todosApi = createApi({
         const { data: createdTodo } = await queryFulfilled;
         dispatch(
           todosApi.util.updateQueryData('getTodos', undefined, (draft) => {
-            draft.push(createdTodo);
+            draft.unshift(createdTodo);
           })
         );
       },

@@ -8,3 +8,8 @@
 .add-task-input {
   padding: 11px;
 }
+
+.list {
+  display: flex;
+  align-items: center;
+}

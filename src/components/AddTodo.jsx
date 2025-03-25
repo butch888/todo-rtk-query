@@ -9,7 +9,7 @@ const AddTodo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (task) {
-      await addTodo({ id: `${createKey()}`, task: task, isDone: false });
+      await addTodo({ id: `${createKey()}`, task: task, isDone: false, date: new Date().toLocaleDateString() });
       setTask(''); // Очистить поле ввода после добавления
     }
   };

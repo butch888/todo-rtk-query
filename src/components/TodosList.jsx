@@ -68,7 +68,7 @@ const TodoList = () => {
       </div>
       <ul>
         {filteredTodos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} className='list'>
             {editId === todo.id ? (
               <>
                 <input
@@ -85,6 +85,7 @@ const TodoList = () => {
               </>
             ) : (
               <>
+                <span>{todo.date}</span>&nbsp;&nbsp;
                 <span style={{ textDecoration: todo.isDone ? 'line-through' : 'none' }}>
                   {todo.task}
                 </span>
